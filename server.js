@@ -53,19 +53,23 @@ var inputAirport = new Airport({
   name: 'JFK',
   country: 'USA',
   opened: 'random date in 1990',
-  terminal: {
-    name: 'BaoTakeOff',
-    flight: [flightOne, flightTwo]
-    }
+  // terminal: {
+  //   name: 'BaoTakeOff',
+  //   flight: [flightOne, flightTwo]
+  //   }
 })
 
+inputAirport.terminal.push({
+    name: 'Terminal1',
+    flight: [flightOne, flightTwo],
+    capacity: 234324
+    })
+
 inputAirport.save( (err) => {
-
-Airport.findOne({name: 'JFK'}).populate('terminal.flight').exec(function (err, flight) {
-  if(err) {
-    console.log(err)
-  } else {
-
+    Airport.findOne({name: 'JFK'}).populate('terminal.flight').exec(function (err, flight) {
+      if(err) {
+        console.log(err)
+    } else {
     console.log(JSON.stringify(flight, null, 2)) ;
   }
 })
