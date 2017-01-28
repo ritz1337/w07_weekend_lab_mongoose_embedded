@@ -1,0 +1,26 @@
+{
+  "name": "w07_weekend_lab_mongoose_embedded",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritz1337/w07_weekend_lab_mongoose_embedded.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritz1337/w07_weekend_lab_mongoose_embedded/issues"
+  },
+  "homepage": "https://github.com/ritz1337/w07_weekend_lab_mongoose_embedded#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.7.9",
+    "morgan": "^1.7.0"
+  }
+}
